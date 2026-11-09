@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(hasTeen(22, 23, 34));
+        System.out.println(isCatPlaying(false, 35));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
@@ -25,7 +25,11 @@ public class Main {
     }
 
     public static boolean isCatPlaying(boolean isSummer, int temp) {
-        return true;
+        if (isSummer) {
+            return (temp>= 25 && temp<=45);
+        } else {
+            return (temp>= 25 && temp<=35);
+        }
     }
 
     public static double area(double width, double height) {
