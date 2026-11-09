@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isCatPlaying(false, 35));
+        System.out.println(area(-1.0));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
@@ -33,10 +33,12 @@ public class Main {
     }
 
     public static double area(double width, double height) {
-        return 0;
+        if(width<0 || height <0) return -1;
+        return width * height;
     }
 
     public static double area(double radius) {
-        return 0;
+        if (radius<0) return -1;
+        return radius*radius*Math.PI;
     }
 }
